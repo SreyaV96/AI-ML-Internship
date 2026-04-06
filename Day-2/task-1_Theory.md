@@ -12,7 +12,7 @@ These libraries provide pre-built functions, reducing development time and simpl
 
 ### 2. Simple and Readable Syntax
 - Easy to learn and implement  
-- English-like syntax  
+- simple syntax  
 - Uses indentation instead of complex symbols  
 This improves code readability, maintainability, and reduces errors.
 ### 3. No Compilation Required
@@ -116,7 +116,6 @@ In Python, `if` and loops are used to control how a program runs, but they have 
   ```python
      for i in range(3):
        print("Hello")
-     i = 0
 
 ---
 
@@ -136,5 +135,5 @@ In Python, `if` and loops are used to control how a program runs, but they have 
      def subtract(a, b):
       return a - b
 
-    result = subtract(10, 4)
-    print(result)
+     result = subtract(10, 4)
+     print(result)
