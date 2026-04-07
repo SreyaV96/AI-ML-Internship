@@ -12,7 +12,11 @@ These libraries provide pre-built functions, reducing development time and simpl
 
 ### 2. Simple and Readable Syntax
 - Easy to learn and implement  
+<<<<<<< HEAD
 - simple syntax  
+=======
+- Simple syntax  
+>>>>>>> d26f1d3 (Day 3 completed)
 - Uses indentation instead of complex symbols  
 This improves code readability, maintainability, and reduces errors.
 ### 3. No Compilation Required
@@ -116,6 +120,10 @@ In Python, `if` and loops are used to control how a program runs, but they have 
   ```python
      for i in range(3):
        print("Hello")
+<<<<<<< HEAD
+=======
+    
+>>>>>>> d26f1d3 (Day 3 completed)
 
 ---
 
@@ -132,8 +140,8 @@ In Python, `if` and loops are used to control how a program runs, but they have 
 - **User-defined functions** → Created by the programmer  
   eg:
   ```python
-     def subtract(a, b):
-      return a - b
+    def subtract(a, b):
+     return a - b
 
      result = subtract(10, 4)
      print(result)
