@@ -3,10 +3,10 @@
 File handling allows to create, read, write, and manipulate files stored on disk
 - The key function for working with files in Python is the open() function.
 - Four different methods for opening a file:
-  - r -  Read existing file 
-  - w - Write Create/overwrite file 
-  - a - Append Add data without deleting
-  - x - Create Create new file only 
+  - r - Read - Read existing file 
+  - w - Write - Create/overwrite file 
+  - a - Append - Add data without deleting
+  - x - Create - create new file only 
 -  we can specify if the file should be handled as binary or text mode.
   - "t" - Text - Default value. Text mode
   - "b" - Binary - Binary mode (e.g. images)
