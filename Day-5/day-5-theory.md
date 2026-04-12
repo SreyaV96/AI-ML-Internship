@@ -42,7 +42,8 @@
     a = "Hello, AI"
     print(a.replace("AI", "ML"))
     ```
-  -  Split & Join 
+  -  Split & Join
+ 
     ```python
     text = "AI ML Python" 
     words = text.split(" ") 
