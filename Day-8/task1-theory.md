@@ -1,4 +1,4 @@
-## 1. What is Function?
+# 1. What is Function?
 A function is a reusable block of code that performs a specific task. It helps organize code and avoids repetition.
 
 ```python
@@ -32,7 +32,7 @@ print(result)      # 5
 show_add(2, 3)    # 5
 ```
 ---
-## 3. What is recursion?
+# 3. What is recursion?
 Recursion is when a function calls itself to solve a problem.
 -  Must have a base case 
 -  Used in complex problems 
