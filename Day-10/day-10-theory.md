@@ -4,10 +4,10 @@ Instead of writing everything in functions, we organize code into:
 - Classes 
 - Objects 
 ## Advantages of OOP
-• Better structure 
-• Reusability 
-• Easy to manage large projects 
-• Used in real-world applications 
+-  Better structure 
+-  Reusability 
+-  Easy to manage large projects 
+-  Used in real-world applications 
 ---
 # 2. Difference between class and object 
 A class is a blueprint or template that defines properties (attributes) and behaviors (methods), while an object is a physical, concrete instance created from that class.
