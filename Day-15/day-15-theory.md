@@ -1,7 +1,8 @@
 # 1. What is data? 
 Data is a collection of information. 
 # 2. Types of data 
-<img src="610b2f12-57a7-4a3a-8961-dcd5f69d1fcb.png" alt="Types of data" width="250">
+<img src="610b2f12-57a7-4a3a-8961-dcd5f69d1fcb.png" alt="Types of data" width="500">
+
 # 3. What is data cleaning? 
 Data cleaning is the process of fixing or removing incorrect, missing, duplicate, or invalid data.
 ### Examples:
