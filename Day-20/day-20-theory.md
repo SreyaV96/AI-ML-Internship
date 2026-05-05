@@ -1,8 +1,12 @@
 # 1. What is indexing? 
 Indexing is selecting a single element from an array using its position.
+
+
 ---
 # 2. What is slicing? 
 Slicing extracts a subset of array using a range of indices.
+
+
 ---
 # 3. Difference between indexing and slicing 
 | Aspect    | Indexing       | Slicing               |
