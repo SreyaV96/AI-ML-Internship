@@ -34,26 +34,15 @@ Total elements before = Total elements after
 - Transpose means converting rows into columns and columns into rows. 
 - If a matrix is named \( A \), its transpose is written as \( A^T \).
 ### Example
-
+```text
 Original matrix:
-
-\[
-\begin{bmatrix}
-1 & 2 \\
-3 & 4
-\end{bmatrix}
-\]
+| 1  2 |
+| 3  4 |
 
 Transpose:
-
-\[
-\begin{bmatrix}
-1 & 3 \\
-2 & 4
-\end{bmatrix}
-\]
-
----
+| 1  3 |
+| 2  4 |
+```
 
 # 5. What is stacking? 
 - Stacking means combining multiple arrays into one. 
