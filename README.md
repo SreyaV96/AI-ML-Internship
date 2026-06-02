@@ -28,7 +28,7 @@ This repository contains my learning progress, notes, and tasks completed during
 - Loops (for & while)  
 - Functions
 
-
+---
 ## Day 37: Classification vs Regression in Machine Learning
 
 ### Topics Covered
