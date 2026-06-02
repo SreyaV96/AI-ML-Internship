@@ -14,14 +14,7 @@ This repository contains my learning progress, notes, and tasks completed during
   - Reinforcement Learning
 - Real-world applications of AI
 - Git & GitHub basics
-## ✅ Tasks Completed
-
-- Installed and configured Git  
-- Created local repository: `AI-ML-Internship`  
-- Connected project to GitHub  
-- Completed theory questions  
-- Researched AI vs ML vs Deep Learning  
-- Thought exercise on AI project idea  
+ 
 ---
 ## Day 2: Python Basics for AI
 
@@ -34,11 +27,29 @@ This repository contains my learning progress, notes, and tasks completed during
 - Conditional statements  
 - Loops (for & while)  
 - Functions
-## ✅ Tasks Completed 
 
-- Basic programs (arithmetic, input/output)  
-- Logic building (even/odd, largest number)  
-- Loop practice (numbers, sums, reverse)  
-- Function practice (prime, factorial)  
- 
+
+## Day 37: Classification vs Regression in Machine Learning
+
+### Topics Covered
+
+- Introduction to Supervised Learning
+- Regression in Machine Learning
+- Classification in Machine Learning
+- Difference Between Regression and Classification
+- Continuous Data
+- Categorical Data
+- Regression Examples
+  - Salary Prediction
+  - House Price Prediction
+  - Sales Forecasting
+  - Temperature Prediction
+- Classification Examples
+  - Spam Detection
+  - Disease Prediction
+  - Pass/Fail Prediction
+  - Cat vs Dog Classification
+- Linear Regression using Scikit-Learn
+- Logistic Regression using Scikit-Learn
+- Features and Labels
 
