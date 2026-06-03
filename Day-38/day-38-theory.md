@@ -10,7 +10,6 @@
 - Probability estimation: It provides probabilities, making it useful for decision-making.
 - Binary and multiclass problems: It handles binary classification directly and can be extended to multinomial classification. 
 
-
 # 3. What is Binary Classification?
 - Binary Classification is a classification problem where there are only two possible classes. 
 - Logistic Regression is most commonly used for binary classification.
