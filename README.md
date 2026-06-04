@@ -81,4 +81,32 @@ This repository contains my learning progress, notes, and tasks completed during
 
 ---
 
+## Day 39: K-Nearest Neighbors (KNN) Classification Algorithm
+
+### Topics Covered
+
+- Introduction to KNN
+- What is KNN?
+- Meaning of K in KNN
+- How KNN Works
+- Creating a KNN Model using `KNeighborsClassifier`
+- Model Training using `fit()`
+- Making Predictions using `predict()`
+- Choosing the Right K Value
+- Advantages and Disadvantages of KNN
+- Real-World Applications of KNN
+- Difference Between Logistic Regression and KNN
+
+### Practical Tasks
+
+- Trained KNN Models
+- Predicted Student Results
+- Predicted Disease Status
+- Predicted Customer Categories
+- Experimented with K Values (1, 3, 5)
+- Compared Prediction Outputs
+- Compared Logistic Regression and KNN
+
+---
+
 
