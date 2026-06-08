@@ -138,5 +138,64 @@ This repository contains my learning progress, notes, and tasks completed during
 
 ---
 
+## Day 41: Random Forest Classification Algorithm
+
+### Topics Covered
+
+- Introduction to Random Forest
+- What is Random Forest?
+- Ensemble Learning Method
+- Voting in Random Forest
+- How Random Forest Works
+- Creating a Random Forest Model using `RandomForestClassifier`
+- Model Training using `fit()`
+- Making Predictions using `predict()`
+- Important Parameter: `n_estimators`
+- Advantages and Disadvantages of Random Forest
+- Random Forest Workflow
+- Real-World Applications of Random Forest
+- Difference Between Decision Tree and Random Forest
+- Comparison of Decision Tree, Random Forest, and KNN
+
+## Practical Tasks
+
+- Built Random Forest Classification Models
+- Predicted Student Results
+- Predicted Disease Status
+- Predicted Loan Approval Status
+- Experimented with `n_estimators` Values (10, 50, 100)
+- Compared Prediction Outputs
+- Compared Decision Tree, Random Forest, and KNN Algorithms
+
+---
+## Day 42: Naive Bayes Classification Algorithm
+
+### Topics Covered
+
+- Introduction to Naive Bayes
+- What is Naive Bayes?
+- Understanding Probability
+- Bayes' Theorem
+- Creating a Naive Bayes Model using `GaussianNB`
+- Model Training using `fit()`
+- Making Predictions using `predict()`
+- Naive Bayes Workflow
+- Advantages and Disadvantages of Naive Bayes
+- Real-World Applications of Naive Bayes
+- Difference Between Naive Bayes and KNN
+- Difference Between Naive Bayes and Decision Tree
+- Comparison of KNN, Decision Tree, Random Forest, and Naive Bayes
+
+## Practical Tasks
+
+- Built Naive Bayes Classification Models
+- Predicted Student Results
+- Predicted Disease Status
+- Predicted Spam Detection Outcomes
+- Calculated Probability of Spam Emails
+- Calculated Probability of Non-Spam Emails
+- Compared KNN, Decision Tree, Random Forest, and Naive Bayes Algorithms
+
+---
 
 
