@@ -108,5 +108,35 @@ This repository contains my learning progress, notes, and tasks completed during
 - Compared Logistic Regression and KNN
 
 ---
+## Day 40: Decision Tree Classification Algorithm
+
+### Topics Covered
+
+- Introduction to Decision Trees
+- What is a Decision Tree?
+- Important Decision Tree Terminology
+- Creating a Decision Tree Model using `DecisionTreeClassifier`
+- Model Training using `fit()`
+- Making Predictions using `predict()`
+- Advantages and Disadvantages of Decision Trees
+- Overfitting in Decision Trees
+- Decision Tree Workflow
+- Real-World Applications of Decision Trees
+- Difference Between Decision Tree and KNN
+- Comparison of Logistic Regression, KNN, and Decision Tree
+
+## Practical Tasks
+
+- Built Decision Tree Classification Models
+- Predicted Student Results
+- Predicted Disease Status
+- Predicted Loan Approval Status
+- Identified Root Nodes
+- Identified Leaf Nodes
+- Explained Decision Paths
+- Compared Logistic Regression, KNN, and Decision Tree Algorithms
+
+---
+
 
 
