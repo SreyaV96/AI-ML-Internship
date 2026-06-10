@@ -197,5 +197,34 @@ This repository contains my learning progress, notes, and tasks completed during
 - Compared KNN, Decision Tree, Random Forest, and Naive Bayes Algorithms
 
 ---
+## Day 43: Support Vector Machine (SVM) Classification Algorithm
+
+### Topics Covered
+
+- Introduction to Support Vector Machine (SVM)
+- What is SVM?
+- Understanding Decision Boundary, Support Vectors, Margin
+- Creating an SVM Model using `SVC`
+- Model Training using `fit()`
+- Making Predictions using `predict()`
+- SVM Workflow
+- Advantages and Disadvantages of SVM
+- Real-World Applications of SVM
+- Difference Between SVM and Logistic Regression
+- Difference Between SVM and KNN
+- Importance of SVM in Machine Learning
+
+## Practical Tasks
+
+- Built SVM Classification Models using `SVC`
+- Trained SVM Models using `fit()`
+- Predicted Student Results using `predict()`
+- Predicted Student Results
+- Predicted Disease Status Prediction
+- Predicted Spam Detection Prediction
+- Compared Logistic Regression, KNN, Decision Tree, Random Forest, and SVM Algorithms
+- Visualized Decision Boundary, Support Vectors, and Margin
+
+---
 
 
