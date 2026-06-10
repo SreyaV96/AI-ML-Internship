@@ -214,7 +214,7 @@ This repository contains my learning progress, notes, and tasks completed during
 - Difference Between SVM and KNN
 - Importance of SVM in Machine Learning
 
-## Practical Tasks
+### Practical Tasks
 
 - Built SVM Classification Models using `SVC`
 - Trained SVM Models using `fit()`
@@ -226,5 +226,29 @@ This repository contains my learning progress, notes, and tasks completed during
 - Visualized Decision Boundary, Support Vectors, and Margin
 
 ---
+## Day 44: Introduction to YOLO & Computer Vision
 
+### Topics Covered
+
+- Introduction to Computer Vision
+- What is Object Detection?
+- What is YOLO (You Only Look Once)?
+- Understanding Bounding Boxes
+- Difference Between Image Classification and Object Detection
+- YOLO Workflow
+- Advantages and Disadvantages of YOLO
+- Popular YOLO Versions (YOLOv3, YOLOv5, YOLOv8)
+- Real-World Applications of YOLO
+- Installing Ultralytics YOLO
+- Loading a Pre-trained YOLOv8 Model
+- Running Object Detection using YOLO
+
+## Practical Tasks
+
+- Installed YOLO using `pip install ultralytics`
+- Imported YOLO using `from ultralytics import YOLO`
+- Loaded the YOLOv8 Pre-trained Model (`yolov8n.pt`)
+- Researched YOLOv3, YOLOv5, and YOLOv8
+
+---
 
