@@ -3,7 +3,7 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.pt")
 
 model.train(
-    data=r"D:\AI-ML-Internship\Day-48\helmet_detection.dataset\data.yaml",
+    data=r"D:\AI-ML-Internship\Day-48\helmet_detection_dataset\data.yaml",
     epochs=10,
     imgsz=512,
     batch=4,

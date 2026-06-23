@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: D:\AI-ML-Internship\Day-48\helmet_detection.dataset\data.yaml
+data: D:\AI-ML-Internship\Day-48\helmet_detection_dataset\data.yaml
 epochs: 10
 time: null
 patience: 100
