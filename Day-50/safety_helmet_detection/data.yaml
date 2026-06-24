@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Helmet', 'No_Helmet']
+
+roboflow:
+  workspace: sreyas-workspace-jgbrl
+  project: safety_helmet_detection-oezmn
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sreyas-workspace-jgbrl/safety_helmet_detection-oezmn/dataset/dataset
