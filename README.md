@@ -465,3 +465,29 @@ This repository contains my learning progress, notes, and tasks completed during
 - Wrote a Short Paragraph Explaining How ChatGPT Uses NLP
 - Drew the NLP Workflow Diagram
 ---
+## Day 52: Text Preprocessing – Tokenization, Stop Words & Text Cleaning
+
+### Topics Covered
+- Introduction to Text Preprocessing
+- Importance of Text Preprocessing
+- NLP Pipeline
+- Tokenization (Word Tokenization, Sentence Tokenization, Character Tokenization)
+- Tokenization using Python (`split()`)
+- Stop Words
+- Importance of Stop Word Removal
+- Common English Stop Words
+- Text Cleaning
+  - Lowercase Conversion
+  - Punctuation Removal
+  - Number Removal
+  - Special Character Removal
+- Real-World Text Preprocessing Example (Amazon Review)
+- Importance of Text Preprocessing in NLP Models
+
+## Practical Tasks
+- Implemented Word Tokenization using Python
+- Performed Lowercase Conversion 
+- Removed Punctuation 
+- Identified and Removed Stop Words
+- Applied Basic Text Cleaning Techniques for NLP
+---
