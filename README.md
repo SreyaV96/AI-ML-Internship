@@ -431,17 +431,37 @@ This repository contains my learning progress, notes, and tasks completed during
 - Real-World Helmet Detection Workflow
 - Industry Deployment Concepts
 
-## Practical Tasks
+### Practical Tasks
 - Designed the YOLO Dataset Structure for Helmet and No_Helmet Classes
 - Annotated Images using Roboflow
 - Created a Custom Dataset with Training, Validation, and Test Sets
-- Wrote a `data.yaml` Configuration File
 - Loaded the YOLOv8 Nano Pre-trained Model (`yolov8n.pt`)
 - Trained a Custom Helmet Detection Model using YOLOv8
-- Monitored Training Metrics:
+- Monitored Training Metrics
 - Analyzed Training Outputs:`best.pt`, `last.pt`,`results.png`
 - Tested the Trained Model on New Images
 - Performed Helmet and No_Helmet Detection using the Trained Model
 - Saved Prediction Results to Custom Output Folders
 - Evaluated Model Performance on Validation Data
+---
+
+## Day 51: Introduction to Natural Language Processing (NLP)
+
+### Topics Covered
+- Introduction to Natural Language Processing (NLP)
+- Definition of NLP
+- Importance of NLP in Artificial Intelligence
+- Real-World Applications of NLP
+- Understanding Text Data
+- NLP Workflow
+- NLP Examples
+- Challenges in NLP
+- NLP vs Computer Vision
+
+## Practical Tasks
+- Listed 10 NLP Applications Used in Daily Life
+- Identified 5 Popular Applications that Use NLP
+- Collected 20 Positive and 20 Negative Reviews for Sentiment Analysis
+- Wrote a Short Paragraph Explaining How ChatGPT Uses NLP
+- Drew the NLP Workflow Diagram
 ---
