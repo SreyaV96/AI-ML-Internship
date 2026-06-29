@@ -4,9 +4,11 @@ TF-IDF is a feature extraction technique that measures how important a word is i
 Term Frequency (TF) measures how frequently a word appears in a document.
 ### Formula
 
-\[
-TF(t,d)=\frac{\text{Number of times term }t\text{ appears in document }d}{\text{Total number of words in document }d}
-\]
+```text
+TF(t, d) = (Number of times term t appears in document d)
+           ------------------------------------------------
+           (Total number of words in document d)
+```
 
 
 Words that appear frequently in a document get a higher TF.
@@ -15,10 +17,12 @@ Words that appear frequently in a document get a higher TF.
 Inverse Document Frequency (IDF)measures how important or rare a word is across all documents.
 
 ### Formula
-\[
-   IDF(t) = \log \frac{\text{Total number of documents}}{\text{Number of documents containing term t}}
-   \]
 
+```text
+IDF(t) = log(Total number of documents)
+         ---------------------------------------------
+         (Number of documents containing term t)
+```
 
 Words appearing in many documents have lower IDF values, while rare words have higher IDF values.
 # 4. Why is IDF important? 
