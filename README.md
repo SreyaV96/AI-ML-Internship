@@ -458,7 +458,7 @@ This repository contains my learning progress, notes, and tasks completed during
 - Challenges in NLP
 - NLP vs Computer Vision
 
-## Practical Tasks
+### Practical Tasks
 - Listed 10 NLP Applications Used in Daily Life
 - Identified 5 Popular Applications that Use NLP
 - Collected 20 Positive and 20 Negative Reviews for Sentiment Analysis
@@ -484,10 +484,109 @@ This repository contains my learning progress, notes, and tasks completed during
 - Real-World Text Preprocessing Example (Amazon Review)
 - Importance of Text Preprocessing in NLP Models
 
-## Practical Tasks
+### Practical Tasks
 - Implemented Word Tokenization using Python
 - Performed Lowercase Conversion 
 - Removed Punctuation 
 - Identified and Removed Stop Words
 - Applied Basic Text Cleaning Techniques for NLP
+---
+## Day 53 – NLP: Stemming & Lemmatization
+
+### Topics Covered
+- Introduction to Stemming
+- Need for Stemming and Lemmatization
+- Stemming using NLTK
+- Introduction to Lemmatization
+- Difference between Stemming and Lemmatization
+- NLP Workflow with Lemmatization
+- Advantages of Lemmatization
+- Real-World Applications
+
+### Practical Tasks
+- Installed NLTK
+- Performed Stemming using PorterStemmer
+- Applied Lemmatization using WordNetLemmatizer
+- Compared Stemming and Lemmatization Outputs
+
+---
+## Day 54 – NLP: Bag of Words (BoW)
+
+### Topics Covered
+- Introduction to Bag of Words (BoW)
+- Bag of Words Workflow
+- CountVectorizer
+- Importance of Stop Word Removal before BoW
+- Advantages of Bag of Words
+- Limitations of Bag of Words
+- Real-World Applications
+
+### Practical Tasks
+- Created Vocabulary from Sample Sentences
+- Converted Sentences into BoW Vectors Manually
+- Implemented CountVectorizer
+- Generated Bag of Words Vectors for Multiple Sentences
+
+---
+## Day 55 – NLP: TF-IDF (Term Frequency–Inverse Document Frequency)
+
+### Topics Covered
+- Introduction to TF-IDF
+- Limitations of Bag of Words
+- Term Frequency (TF)
+- Inverse Document Frequency (IDF)
+- TF-IDF Workflow
+- TF-IDF Formula
+- Understanding TF-IDF Scores
+- Comparison of BoW and TF-IDF
+- Real-World Applications
+### Practical Tasks
+- Generated TF-IDF Vectors
+- Printed Vocabulary using `get_feature_names_out()`
+- Compared BoW and TF-IDF Outputs
+- Identified Important Words using TF-IDF Scores
+---
+
+## Day 56 – NLP: Word Embeddings (Word2Vec)
+
+### Topics Covered
+- Introduction to Word Embeddings
+- Limitations of BoW and TF-IDF
+- Word2Vec
+- Vector Representation of Words
+- CBOW (Continuous Bag of Words)
+- Skip-Gram
+- Comparison of CBOW and Skip-Gram
+- Advantages of Word2Vec over TF-IDF
+- Real-World Applications
+
+### Practical Tasks
+- Installed Gensim
+- Created a Sample Text Dataset
+- Trained a Word2Vec Model
+- Generated Word Embeddings
+- Found Similar Words using `most_similar()`
+
+---
+## Day 57 – NLP: Pre-trained Word Embeddings (GloVe & FastText)
+
+### Topics Covered
+- Pre-trained Word Embeddings
+- Need for Pre-trained Embeddings
+- Word2Vec as Pre-trained Embeddings
+- GloVe (Global Vectors for Word Representation)
+- Working of GloVe
+- FastText
+- Character n-grams
+- Out-of-Vocabulary (OOV) Words
+- Comparison of Word2Vec, GloVe, and FastText
+- Advantages of FastText
+- Real-World Applications
+
+## Practical Tasks
+- Loaded a Pre-trained GloVe Model
+- Generated Word Vector using GloVe and FastText
+- Retrieved Similar Words using `most_similar()`
+- Explored a Real-World Application of FastText (Spam Detection)
+
 ---
