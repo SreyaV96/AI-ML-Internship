@@ -583,10 +583,32 @@ This repository contains my learning progress, notes, and tasks completed during
 - Advantages of FastText
 - Real-World Applications
 
-## Practical Tasks
+### Practical Tasks
 - Loaded a Pre-trained GloVe Model
 - Generated Word Vector using GloVe and FastText
 - Retrieved Similar Words using `most_similar()`
 - Explored a Real-World Application of FastText (Spam Detection)
+
+---
+
+## Day 58 – Introduction to Chatbot Development
+
+### Topics Covered
+- Introduction to Chatbots
+- Chatbot Architecture
+- Components of a Chatbot
+- Types of Chatbots (Rule-Based & AI-Based)
+- NLP in Chatbots
+- Rule-Based vs AI-Based Chatbots
+- Real-World Applications of Chatbots
+- Chatbot Development Workflow
+- Popular Chatbot Development Platforms
+
+### Practical Tasks
+- Drew the Chatbot Architecture Diagram
+- Listed Websites and Applications that Use Chatbots
+- Identified User Intents from Customer Questions
+- Designed a Simple Banking Chatbot Conversation Flow
+- Compared Rule-Based and AI-Based Chatbots in a Table
 
 ---
