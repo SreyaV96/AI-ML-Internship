@@ -612,3 +612,63 @@ This repository contains my learning progress, notes, and tasks completed during
 - Compared Rule-Based and AI-Based Chatbots in a Table
 
 ---
+
+## Day 59 – Building a Rule-Based Chatbot using Python
+
+### Topics Covered
+- Rule-Based Chatbots
+- Working of a Rule-Based Chatbot
+- Chatbot Logic and Workflow
+- Building a Chatbot using `if-elif-else`
+- Using Python Dictionaries for Chatbot Responses
+- Continuous Chatbot Execution
+- Mini FAQ Chatbot
+- Difference Between Rule-Based and AI Chatbot
+- Advantages and Limitations of Rule-Based Chatbots
+- Real-World Applications of Rule-Based Chatbots
+
+### Practical Tasks
+- Created a Simple Rule-Based Chatbot using Python
+- Built a College Enquiry Chatbot with Multiple Questions
+- Implemented Dictionary-Based Response Handling
+- Added Keyword Matching for Flexible User Input
+- Included a Default Response for Unknown Questions
+
+---
+
+## Day 60 – Building a Menu-Driven Chatbot using Python
+
+### Topics Covered
+- Menu-Driven Chatbots
+- Advantages of Menu-Based Interaction
+- Menu-Driven Chatbot Workflow
+- Using `if-elif-else` for Menu Selection
+- Dictionary-Based Menu Response System
+- Error Handling for Invalid Menu Choices
+- Menu-Driven vs Rule-Based Chatbots
+- Real-World Applications of Menu-Driven Chatbots
+
+### Practical Tasks
+- Developed a College Enquiry Menu-Driven Chatbot
+- Added Hostel and Placement Information Options
+- Stored Menu Responses Using a Python Dictionary
+- Handled Invalid Menu Selections Gracefully
+- Added a Continue/Exit Option for Better User Experience
+
+---
+
+## Day 61 – NLP in Chatbots– Intent Recognition, Entity Recognition & Text Preprocessing 
+
+### Topics Covered
+- IAI-Based Chatbots
+- Rule-Based vs AI-Based Chatbots
+- Natural Language Processing (NLP) Basics
+- Chatbot NLP Workflow
+- Intent and Entity Recognition
+- Text Preprocessing
+- Real-World Applications of AI-Based Chatbots
+
+### Practical Tasks
+- Performed Text Tokenization
+- Identified User Intents and Entities
+---
