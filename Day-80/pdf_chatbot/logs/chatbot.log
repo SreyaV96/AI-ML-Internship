@@ -1,0 +1,8 @@
+2026-10-14 13:51:13,462 | INFO | 1 change detected
+2026-10-14 13:51:15,941 | INFO | 3 changes detected
+2026-10-14 13:51:19,782 | INFO | 1 change detected
+2026-10-14 13:52:03,532 | INFO | 3 changes detected
+2026-10-14 13:52:03,574 | INFO | Upload='1-s2.0-S1877050922023638-main.pdf' | Duration=4.445s | Status=SUCCESS | Pages=9 | Chunks=75
+2026-10-14 13:52:03,892 | INFO | 8 changes detected
+2026-10-14 13:52:04,254 | INFO | 2 changes detected
+2026-10-14 13:52:46,801 | INFO | Question='What is the pdf is about?' | Duration=0.354s | Status=SUCCESS | Sources=['1-s2.0-S1877050922023638-main.pdf']

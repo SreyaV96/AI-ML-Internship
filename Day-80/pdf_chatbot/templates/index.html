@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDF Chatbot</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            padding: 30px 15px;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d4ed8;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .status {
+            margin-top: 12px;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .answer-box {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 16px;
+            border-radius: 8px;
+            min-height: 70px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .source-list {
+            padding-left: 22px;
+        }
+
+        .source-list li {
+            margin: 8px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .success {
+            color: #15803d;
+        }
+
+        .error {
+            color: #dc2626;
+        }
+
+        .muted {
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>PDF Chatbot</h1>
+
+    <p class="subtitle">
+        Upload a PDF and ask questions about its content.
+    </p>
+
+    <!-- PDF Upload Section -->
+    <section class="card">
+
+        <h2>1. Upload PDF</h2>
+
+        <form id="uploadForm">
+
+            <input
+                type="file"
+                id="pdfFile"
+                accept=".pdf,application/pdf"
+                required
+            >
+
+            <button type="submit" id="uploadButton">
+                Upload PDF
+            </button>
+
+        </form>
+
+        <p id="uploadStatus" class="status" role="status">
+        </p>
+
+    </section>
+
+
+    <!-- Question Section -->
+    <section class="card">
+
+        <h2>2. Ask a Question</h2>
+
+        <form id="questionForm">
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Ask something about your PDF..."
+                maxlength="2000"
+                required
+            >
+
+            <button type="submit" id="askButton">
+                Ask Question
+            </button>
+
+        </form>
+
+        <p id="questionStatus" class="status" role="status">
+        </p>
+
+    </section>
+
+
+    <!-- Chatbot Response -->
+    <section class="card">
+
+        <h2>3. Chatbot Response</h2>
+
+        <div id="answer" class="answer-box" aria-live="polite">
+            Your answer will appear here.
+        </div>
+
+    </section>
+
+
+    <!-- Source Documents -->
+    <section class="card">
+
+        <h2>4. Source Documents</h2>
+
+        <ul id="sources" class="source-list">
+            <li class="muted">No sources retrieved yet.</li>
+        </ul>
+
+    </section>
+
+</div>
+
+
+<script>
+
+    // Get HTML elements
+    const uploadForm = document.getElementById("uploadForm");
+    const questionForm = document.getElementById("questionForm");
+
+    const pdfFile = document.getElementById("pdfFile");
+    const uploadButton = document.getElementById("uploadButton");
+    const askButton = document.getElementById("askButton");
+
+    const uploadStatus = document.getElementById("uploadStatus");
+    const questionStatus = document.getElementById("questionStatus");
+
+    const questionInput = document.getElementById("question");
+    const answerBox = document.getElementById("answer");
+    const sourceList = document.getElementById("sources");
+
+
+    // -----------------------------------------
+    // 1. Upload PDF
+    // -----------------------------------------
+
+    uploadForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        const file = pdfFile.files[0];
+
+        if (!file) {
+            uploadStatus.textContent = "Please select a PDF file.";
+            uploadStatus.className = "status error";
+            return;
+        }
+
+        if (!file.name.toLowerCase().endsWith(".pdf")) {
+            uploadStatus.textContent = "Please select a PDF file.";
+            uploadStatus.className = "status error";
+            return;
+        }
+
+        const formData = new FormData();
+
+        formData.append("file", file);
+
+        uploadButton.disabled = true;
+        uploadStatus.textContent = "Uploading and processing PDF...";
+        uploadStatus.className = "status";
+
+        try {
+
+            const response = await fetch("/upload", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(
+                    data.detail || "Failed to upload PDF."
+                );
+            }
+
+            uploadStatus.textContent =
+                "PDF uploaded successfully!\n" +
+                "Filename: " + data.filename + "\n" +
+                "Pages: " + data.pages + "\n" +
+                "Chunks stored: " + data.chunks_stored;
+
+            uploadStatus.className = "status success";
+
+        } catch (error) {
+
+            uploadStatus.textContent =
+                "Upload failed: " + error.message;
+
+            uploadStatus.className = "status error";
+
+        } finally {
+
+            uploadButton.disabled = false;
+
+        }
+
+    });
+
+
+    // -----------------------------------------
+    // 2. Ask a question
+    // -----------------------------------------
+
+    questionForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        const question = questionInput.value.trim();
+
+        if (!question) {
+            questionStatus.textContent = "Please enter a question.";
+            questionStatus.className = "status error";
+            return;
+        }
+
+        askButton.disabled = true;
+
+        questionStatus.textContent = "Searching your documents...";
+        questionStatus.className = "status";
+
+        answerBox.textContent = "Processing your question...";
+
+        sourceList.replaceChildren();
+
+        try {
+
+            const response = await fetch("/ask", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    question: question
+                })
+
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(
+                    data.detail || "Failed to process question."
+                );
+            }
+
+            // Display chatbot response
+            answerBox.textContent = data.answer;
+
+            // Display source filenames
+            if (data.sources && data.sources.length > 0) {
+
+                data.sources.forEach(function(source) {
+
+                    const item = document.createElement("li");
+
+                    item.textContent = source;
+
+                    sourceList.appendChild(item);
+
+                });
+
+            } else {
+
+                const item = document.createElement("li");
+
+                item.textContent = "No source documents returned.";
+                item.className = "muted";
+
+                sourceList.appendChild(item);
+
+            }
+
+            questionStatus.textContent =
+                "Question processed successfully.";
+
+            questionStatus.className = "status success";
+
+        } catch (error) {
+
+            answerBox.textContent = "Unable to answer the question.";
+
+            questionStatus.textContent =
+                "Error: " + error.message;
+
+            questionStatus.className = "status error";
+
+        } finally {
+
+            askButton.disabled = false;
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
